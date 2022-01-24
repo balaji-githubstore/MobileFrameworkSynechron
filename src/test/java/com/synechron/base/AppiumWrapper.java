@@ -17,6 +17,8 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class AppiumWrapper {
 
@@ -26,8 +28,13 @@ public class AppiumWrapper {
 	@BeforeTest
 	public void appiumServerSetup() {
 		
+		AppiumServiceBuilder builder=new AppiumServiceBuilder()
+				.usingAnyFreePort()
+				.withArgument(GeneralServerFlag.RELAXED_SECURITY)
+				.withLogFile(new File("src/test/resources/log/appium_log.log"));
 		
-		service = AppiumDriverLocalService.buildDefaultService();
+		
+		service = AppiumDriverLocalService.buildService(builder);
 		service.start();
 	}
 
