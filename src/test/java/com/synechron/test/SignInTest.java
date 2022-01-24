@@ -28,5 +28,6 @@ public class SignInTest extends AppiumWrapper {
 		Assert.assertEquals(actualError, "There was an issue signing in");
 	}
 	
+	
 
 }

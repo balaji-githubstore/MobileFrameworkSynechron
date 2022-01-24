@@ -1,8 +1,13 @@
 package com.synechron.base;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.util.Base64;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -31,7 +36,7 @@ public class AppiumWrapper {
 		AppiumServiceBuilder builder=new AppiumServiceBuilder()
 				.usingAnyFreePort()
 				.withArgument(GeneralServerFlag.RELAXED_SECURITY)
-				.withLogFile(new File("src/test/resources/log/appium_log.log"));
+				.withLogFile(new File("src/test/resources/log/appium_log_"+LocalDateTime.now().toString().replace(":", "-")+".log"));
 		
 		
 		service = AppiumDriverLocalService.buildService(builder);
@@ -56,10 +61,19 @@ public class AppiumWrapper {
 
 		driver = new AndroidDriver<WebElement>(service, cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		driver.startRecordingScreen();
+		
 	}
 
 	@AfterMethod
-	public void terminateApp() {
+	public void terminateApp() throws IOException {
+		
+		String encoded=driver.stopRecordingScreen();
+		byte[] decoded= Base64.getDecoder().decode(encoded);
+		FileOutputStream fout=new FileOutputStream("src/test/resources/video/video_"+LocalDateTime.now().toString().replace(":", "-")+".mp4");
+		fout.write(decoded);
+		
 		driver.quit();
 	}
 
