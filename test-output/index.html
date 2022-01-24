@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\JiDi\AppData\Local\Temp\testng-eclipse-1263765360\testng-customsuite.xml</span>
+                    <span>C:\Users\JiDi\AppData\Local\Temp\testng-eclipse--512186899\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.synechron.test.SignInTest" class="method navigator-link" hash-for-method="invalidCredentialTest">invalidCredentialTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.synechron.test.SignInTest" class="method navigator-link" hash-for-method="invalidCredentialTest(john, john123, There was an issue signing in)">invalidCredentialTest(john, john123, There was an issue signing in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.synechron.test.SignInTest" class="method navigator-link" hash-for-method="invalidCredentialTest(peter, peter12, There was an issue signing in)">invalidCredentialTest(peter, peter12, There was an issue signing in)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,9 +132,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidCredentialTest">
-                  </a> <!-- invalidCredentialTest -->
+                  <a name="invalidCredentialTest(john, john123, There was an issue signing in)">
+                  </a> <!-- invalidCredentialTest(john, john123, There was an issue signing in) -->
                   <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(john, john123, There was an issue signing in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(peter, peter12, There was an issue signing in)">
+                  </a> <!-- invalidCredentialTest(peter, peter12, There was an issue signing in) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(peter, peter12, There was an issue signing in)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +151,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\JiDi\AppData\Local\Temp\testng-eclipse-1263765360\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\JiDi\AppData\Local\Temp\testng-eclipse--512186899\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,16 +204,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalidCredentialTest')
 data.setCell(0, 2, 'com.synechron.test.SignInTest')
-data.setCell(0, 3, 10554);
+data.setCell(0, 3, 10446);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidCredentialTest')
+data.setCell(1, 2, 'com.synechron.test.SignInTest')
+data.setCell(1, 3, 9803);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -232,19 +250,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">startApp</span>
-                <span class="method-start">37085 ms</span>
+                <span class="method-start">5347 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">invalidCredentialTest</span>
-                <span class="method-start">60623 ms</span>
+                <span class="method-name">invalidCredentialTest(john, john123, There was an issue signing in)</span>
+                <span class="method-start">19926 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">terminateApp</span>
-                <span class="method-start">71192 ms</span>
+                <span class="method-start">30382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startApp</span>
+                <span class="method-start">30927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialTest(peter, peter12, There was an issue signing in)</span>
+                <span class="method-start">45346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">terminateApp</span>
+                <span class="method-start">55154 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">appiumServerTerminate</span>
-                <span class="method-start">74905 ms</span>
+                <span class="method-start">55757 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,20 +3,22 @@ package com.synechron.test;
 import java.net.MalformedURLException;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.synechron.base.AppiumWrapper;
+import com.synechron.utilities.DataProviderUtils;
 
 public class SignInTest extends AppiumWrapper {
 	
-	@Test
-	public void invalidCredentialTest() throws MalformedURLException {
+	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "invalidCredentialData")
+	public void invalidCredentialTest(String username,String password,String expectedError) throws MalformedURLException {
 
 		driver.findElementByXPath("//*[@text='Dismiss']").click();
 		driver.findElementByXPath("//*[@text='Sign in']").click();
 		driver.findElementByXPath("//*[@text='Sign in']").click();
-		driver.findElementByXPath("//*[contains(@text,'address')]").sendKeys("bala");
-		driver.findElementByXPath("//*[@content-desc='Password']").sendKeys("bala123");
+		driver.findElementByXPath("//*[contains(@text,'address')]").sendKeys(username);
+		driver.findElementByXPath("//*[@content-desc='Password']").sendKeys(password);
 
 		if (driver.isKeyboardShown()) {
 			driver.hideKeyboard();
@@ -25,7 +27,7 @@ public class SignInTest extends AppiumWrapper {
 		driver.findElementByXPath("(//*[@text='Sign in'])[2]").click();
 		String actualError = driver.findElementByXPath("//*[contains(@text,'issue')]").getText();
 
-		Assert.assertEquals(actualError, "There was an issue signing in");
+		Assert.assertEquals(actualError, expectedError);
 	}
 	
 	

@@ -62,17 +62,18 @@ public class AppiumWrapper {
 		driver = new AndroidDriver<WebElement>(service, cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.startRecordingScreen();
+//		driver.startRecordingScreen();
 		
 	}
 
 	@AfterMethod
 	public void terminateApp() throws IOException {
 		
-		String encoded=driver.stopRecordingScreen();
-		byte[] decoded= Base64.getDecoder().decode(encoded);
-		FileOutputStream fout=new FileOutputStream("src/test/resources/video/video_"+LocalDateTime.now().toString().replace(":", "-")+".mp4");
-		fout.write(decoded);
+//		String encoded=driver.stopRecordingScreen();
+		
+//		byte[] decoded= Base64.getDecoder().decode(encoded);
+//		FileOutputStream fout=new FileOutputStream("src/test/resources/video/video_"+LocalDateTime.now().toString().replace(":", "-")+".mp4");
+//		fout.write(decoded);
 		
 		driver.quit();
 	}
