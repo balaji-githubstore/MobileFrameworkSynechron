@@ -8,14 +8,33 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class AppiumWrapper {
-	
+
 	protected AndroidDriver<WebElement> driver;
+	private AppiumDriverLocalService service;
+
+	@BeforeTest
+	public void appiumServerSetup() {
+		
+		
+		service = AppiumDriverLocalService.buildDefaultService();
+		service.start();
+	}
+
+	@AfterTest
+	public void appiumServerTerminate() {
+		service.stop();
+	}
 
 	@BeforeMethod
 	public void startApp() throws MalformedURLException {
@@ -28,7 +47,7 @@ public class AppiumWrapper {
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.APP, absolutePath);
 
-		driver = new AndroidDriver<WebElement>(new URL("http://localhost:4723/wd/hub"), cap);
+		driver = new AndroidDriver<WebElement>(service, cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
@@ -36,6 +55,5 @@ public class AppiumWrapper {
 	public void terminateApp() {
 		driver.quit();
 	}
-
 
 }
