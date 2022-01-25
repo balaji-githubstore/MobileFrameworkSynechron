@@ -11,7 +11,7 @@ import com.synechron.utilities.DataProviderUtils;
 
 public class SignInTest extends AppiumWrapper {
 	
-	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "invalidCredentialData")
+	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "commonDataProvider")
 	public void invalidCredentialTest(String username,String password,String expectedError) throws MalformedURLException {
 
 		driver.findElementByXPath("//*[@text='Dismiss']").click();
