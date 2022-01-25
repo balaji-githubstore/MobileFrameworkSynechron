@@ -1,0 +1,437 @@
+2022-01-25 03:46:28:297 [Appium] Welcome to Appium v1.22.2
+2022-01-25 03:46:28:300 [Appium] Non-default server args:
+2022-01-25 03:46:28:301 [Appium]   port: 6299
+2022-01-25 03:46:28:302 [Appium]   logFile: D:\B-Mine\Company\Company\Synechron\appium_workspace\MobileAutomationFramework\src\test\resources\log\appium_log_2022-01-25T09-16-15.493500900.log
+2022-01-25 03:46:28:303 [Appium]   relaxedSecurityEnabled: true
+2022-01-25 03:46:28:342 [Appium] Appium REST http interface listener started on 0.0.0.0:6299
+2022-01-25 03:46:28:604 [HTTP] --> GET /wd/hub/status
+2022-01-25 03:46:28:604 [HTTP] {}
+2022-01-25 03:46:28:606 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-01-25 03:46:28:608 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.2"}}
+2022-01-25 03:46:28:616 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2022-01-25 03:46:28:616 [HTTP] 
+2022-01-25 03:46:29:119 [HTTP] --> GET /wd/hub/status
+2022-01-25 03:46:29:120 [HTTP] {}
+2022-01-25 03:46:29:121 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-01-25 03:46:29:121 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.2"}}
+2022-01-25 03:46:29:123 [HTTP] <-- GET /wd/hub/status 200 3 ms - 68
+2022-01-25 03:46:29:123 [HTTP] 
+2022-01-25 03:46:29:426 [HTTP] Request idempotency key: 1e380e68-e1f7-49a1-9ce3-83fdd9249542
+2022-01-25 03:46:29:527 [HTTP] --> POST /wd/hub/session
+2022-01-25 03:46:29:527 [HTTP] {"desiredCapabilities":{"app":"D:\\B-Mine\\Company\\Company\\Synechron\\appium_workspace\\MobileAutomationFramework\\src\\test\\resources\\app\\khan-academy-7-3-2.apk","platformName":"Android","deviceName":"Redmi"},"capabilities":{"firstMatch":[{"appium:app":"D:\\B-Mine\\Company\\Company\\Synechron\\appium_workspace\\MobileAutomationFramework\\src\\test\\resources\\app\\khan-academy-7-3-2.apk","appium:deviceName":"Redmi","platformName":"android"}]}}
+2022-01-25 03:46:29:528 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"D:\\B-Mine\\Company\\Company\\Synechron\\appium_workspace\\MobileAutomationFramework\\src\\test\\resources\\app\\khan-academy-7-3-2.apk","platformName":"Android","deviceName":"Redmi"},null,{"firstMatch":[{"appium:app":"D:\\B-Mine\\Company\\Company\\Synechron\\appium_workspace\\MobileAutomationFramework\\src\\test\\resources\\app\\khan-academy-7-3-2.apk","appium:deviceName":"Redmi","platformName":"android"}]}]
+2022-01-25 03:46:29:529 [BaseDriver] Event 'newSessionRequested' logged at 1643082389528 (09:16:29 GMT+0530 (India Standard Time))
+2022-01-25 03:46:29:540 [Appium] 
+2022-01-25 03:46:29:541 [Appium] ======================================================================
+2022-01-25 03:46:29:541 [Appium]   DEPRECATION WARNING:
+2022-01-25 03:46:29:542 [Appium] 
+2022-01-25 03:46:29:542 [Appium]   The 'automationName' capability was not provided in the desired 
+2022-01-25 03:46:29:543 [Appium]   capabilities for this Android session
+2022-01-25 03:46:29:543 [Appium] 
+2022-01-25 03:46:29:544 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2022-01-25 03:46:29:544 [Appium]   UiAutomator2 Driver
+2022-01-25 03:46:29:544 [Appium] 
+2022-01-25 03:46:29:545 [Appium]   The next major version of Appium (2.x) will **require** the 
+2022-01-25 03:46:29:545 [Appium]   'automationName' capability to be set for all sessions on all 
+2022-01-25 03:46:29:545 [Appium]   platforms
+2022-01-25 03:46:29:546 [Appium] 
+2022-01-25 03:46:29:546 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2022-01-25 03:46:29:546 [Appium]   'automationName=UiAutomator1'
+2022-01-25 03:46:29:547 [Appium] 
+2022-01-25 03:46:29:547 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2022-01-25 03:46:29:547 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2022-01-25 03:46:29:547 [Appium] 
+2022-01-25 03:46:29:548 [Appium]   For more information about drivers, please visit 
+2022-01-25 03:46:29:548 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2022-01-25 03:46:29:548 [Appium]   'Drivers' menu
+2022-01-25 03:46:29:549 [Appium] 
+2022-01-25 03:46:29:549 [Appium] ======================================================================
+2022-01-25 03:46:29:549 [Appium] 
+2022-01-25 03:46:31:638 [Appium] Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+2022-01-25 03:46:31:639 [Appium] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2022-01-25 03:46:31:643 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-01-25 03:46:31:644 [BaseDriver] Creating session with W3C capabilities: {
+2022-01-25 03:46:31:644 [BaseDriver]   "alwaysMatch": {
+2022-01-25 03:46:31:644 [BaseDriver]     "platformName": "android",
+2022-01-25 03:46:31:645 [BaseDriver]     "appium:app": "D:\\B-Mine\\Company\\Company\\Synechron\\appium_workspace\\MobileAutomationFramework\\src\\test\\resources\\app\\khan-academy-7-3-2.apk",
+2022-01-25 03:46:31:645 [BaseDriver]     "appium:deviceName": "Redmi"
+2022-01-25 03:46:31:645 [BaseDriver]   },
+2022-01-25 03:46:31:645 [BaseDriver]   "firstMatch": [
+2022-01-25 03:46:31:646 [BaseDriver]     {}
+2022-01-25 03:46:31:646 [BaseDriver]   ]
+2022-01-25 03:46:31:646 [BaseDriver] }
+2022-01-25 03:46:31:655 [BaseDriver] Session created with session id: 360e42ee-c9f4-4c29-bf87-c74b28292692
+2022-01-25 03:46:31:658 [BaseDriver] Using local app 'D:\B-Mine\Company\Company\Synechron\appium_workspace\MobileAutomationFramework\src\test\resources\app\khan-academy-7-3-2.apk'
+2022-01-25 03:46:31:658 [UiAutomator2] Checking whether app is actually present
+2022-01-25 03:46:31:666 [ADB] Found 1 'build-tools' folders under 'C:\Users\JiDi\AppData\Local\Android\Sdk' (newest first):
+2022-01-25 03:46:31:666 [ADB]     C:/Users/JiDi/AppData/Local/Android/Sdk/build-tools/30.0.3
+2022-01-25 03:46:31:667 [ADB] Using 'adb.exe' from 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2022-01-25 03:46:31:668 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2022-01-25 03:46:34:237 [AndroidDriver] Retrieving device list
+2022-01-25 03:46:34:238 [ADB] Trying to find a connected android device
+2022-01-25 03:46:34:239 [ADB] Getting connected devices
+2022-01-25 03:46:34:263 [ADB] No connected devices have been detected
+2022-01-25 03:46:34:264 [ADB] Could not find online devices
+2022-01-25 03:46:34:264 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:34:264 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:34:498 [ADB] Getting connected devices
+2022-01-25 03:46:34:523 [ADB] No connected devices have been detected
+2022-01-25 03:46:34:524 [ADB] Could not find online devices
+2022-01-25 03:46:34:524 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:34:524 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:34:750 [ADB] Getting connected devices
+2022-01-25 03:46:34:773 [ADB] No connected devices have been detected
+2022-01-25 03:46:34:773 [ADB] Could not find online devices
+2022-01-25 03:46:34:773 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:34:773 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:34:998 [ADB] Getting connected devices
+2022-01-25 03:46:35:881 [ADB] No connected devices have been detected
+2022-01-25 03:46:35:882 [ADB] Could not find online devices
+2022-01-25 03:46:35:882 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:35:882 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:36:123 [ADB] Getting connected devices
+2022-01-25 03:46:36:186 [ADB] No connected devices have been detected
+2022-01-25 03:46:36:186 [ADB] Could not find online devices
+2022-01-25 03:46:36:186 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:36:187 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:36:433 [ADB] Getting connected devices
+2022-01-25 03:46:36:468 [ADB] No connected devices have been detected
+2022-01-25 03:46:36:468 [ADB] Could not find online devices
+2022-01-25 03:46:36:469 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:36:469 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:36:729 [ADB] Getting connected devices
+2022-01-25 03:46:36:770 [ADB] No connected devices have been detected
+2022-01-25 03:46:36:770 [ADB] Could not find online devices
+2022-01-25 03:46:36:770 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:36:770 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:37:009 [ADB] Getting connected devices
+2022-01-25 03:46:37:071 [ADB] No connected devices have been detected
+2022-01-25 03:46:37:071 [ADB] Could not find online devices
+2022-01-25 03:46:37:072 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:37:072 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:37:307 [ADB] Getting connected devices
+2022-01-25 03:46:37:368 [ADB] No connected devices have been detected
+2022-01-25 03:46:37:369 [ADB] Could not find online devices
+2022-01-25 03:46:37:369 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:37:369 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:37:601 [ADB] Getting connected devices
+2022-01-25 03:46:37:633 [ADB] No connected devices have been detected
+2022-01-25 03:46:37:633 [ADB] Could not find online devices
+2022-01-25 03:46:37:633 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:37:633 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:37:871 [ADB] Getting connected devices
+2022-01-25 03:46:37:912 [ADB] No connected devices have been detected
+2022-01-25 03:46:37:912 [ADB] Could not find online devices
+2022-01-25 03:46:37:913 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:37:913 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:38:169 [ADB] Getting connected devices
+2022-01-25 03:46:38:206 [ADB] No connected devices have been detected
+2022-01-25 03:46:38:207 [ADB] Could not find online devices
+2022-01-25 03:46:38:207 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:38:208 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:38:437 [ADB] Getting connected devices
+2022-01-25 03:46:38:477 [ADB] No connected devices have been detected
+2022-01-25 03:46:38:477 [ADB] Could not find online devices
+2022-01-25 03:46:38:478 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:38:478 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:38:717 [ADB] Getting connected devices
+2022-01-25 03:46:38:743 [ADB] No connected devices have been detected
+2022-01-25 03:46:38:743 [ADB] Could not find online devices
+2022-01-25 03:46:38:743 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:38:744 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:38:981 [ADB] Getting connected devices
+2022-01-25 03:46:39:016 [ADB] No connected devices have been detected
+2022-01-25 03:46:39:016 [ADB] Could not find online devices
+2022-01-25 03:46:39:016 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:39:016 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:39:261 [ADB] Getting connected devices
+2022-01-25 03:46:39:301 [ADB] No connected devices have been detected
+2022-01-25 03:46:39:301 [ADB] Could not find online devices
+2022-01-25 03:46:39:301 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:39:301 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:39:539 [ADB] Getting connected devices
+2022-01-25 03:46:39:600 [ADB] No connected devices have been detected
+2022-01-25 03:46:39:600 [ADB] Could not find online devices
+2022-01-25 03:46:39:601 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:39:601 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:39:835 [ADB] Getting connected devices
+2022-01-25 03:46:39:874 [ADB] No connected devices have been detected
+2022-01-25 03:46:39:875 [ADB] Could not find online devices
+2022-01-25 03:46:39:875 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:39:875 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:40:116 [ADB] Getting connected devices
+2022-01-25 03:46:40:153 [ADB] No connected devices have been detected
+2022-01-25 03:46:40:153 [ADB] Could not find online devices
+2022-01-25 03:46:40:154 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:40:154 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:40:383 [ADB] Getting connected devices
+2022-01-25 03:46:40:420 [ADB] No connected devices have been detected
+2022-01-25 03:46:40:420 [ADB] Could not find online devices
+2022-01-25 03:46:40:420 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:40:420 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:40:652 [ADB] Getting connected devices
+2022-01-25 03:46:40:686 [ADB] No connected devices have been detected
+2022-01-25 03:46:40:686 [ADB] Could not find online devices
+2022-01-25 03:46:40:687 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:40:687 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:40:920 [ADB] Getting connected devices
+2022-01-25 03:46:40:967 [ADB] No connected devices have been detected
+2022-01-25 03:46:40:967 [ADB] Could not find online devices
+2022-01-25 03:46:40:968 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:40:968 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:41:201 [ADB] Getting connected devices
+2022-01-25 03:46:41:276 [ADB] No connected devices have been detected
+2022-01-25 03:46:41:276 [ADB] Could not find online devices
+2022-01-25 03:46:41:277 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:41:277 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:41:512 [ADB] Getting connected devices
+2022-01-25 03:46:41:554 [ADB] No connected devices have been detected
+2022-01-25 03:46:41:554 [ADB] Could not find online devices
+2022-01-25 03:46:41:554 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:41:554 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:41:794 [ADB] Getting connected devices
+2022-01-25 03:46:41:844 [ADB] No connected devices have been detected
+2022-01-25 03:46:41:845 [ADB] Could not find online devices
+2022-01-25 03:46:41:845 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:41:848 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:42:088 [ADB] Getting connected devices
+2022-01-25 03:46:42:129 [ADB] No connected devices have been detected
+2022-01-25 03:46:42:130 [ADB] Could not find online devices
+2022-01-25 03:46:42:130 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:42:130 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:42:369 [ADB] Getting connected devices
+2022-01-25 03:46:42:402 [ADB] No connected devices have been detected
+2022-01-25 03:46:42:403 [ADB] Could not find online devices
+2022-01-25 03:46:42:403 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:42:403 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:42:647 [ADB] Getting connected devices
+2022-01-25 03:46:42:687 [ADB] No connected devices have been detected
+2022-01-25 03:46:42:687 [ADB] Could not find online devices
+2022-01-25 03:46:42:687 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:42:687 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:42:928 [ADB] Getting connected devices
+2022-01-25 03:46:42:966 [ADB] No connected devices have been detected
+2022-01-25 03:46:42:966 [ADB] Could not find online devices
+2022-01-25 03:46:42:966 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:42:967 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:43:211 [ADB] Getting connected devices
+2022-01-25 03:46:43:250 [ADB] No connected devices have been detected
+2022-01-25 03:46:43:250 [ADB] Could not find online devices
+2022-01-25 03:46:43:250 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:43:250 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:43:491 [ADB] Getting connected devices
+2022-01-25 03:46:43:517 [ADB] No connected devices have been detected
+2022-01-25 03:46:43:518 [ADB] Could not find online devices
+2022-01-25 03:46:43:518 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:43:518 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:43:755 [ADB] Getting connected devices
+2022-01-25 03:46:43:797 [ADB] No connected devices have been detected
+2022-01-25 03:46:43:797 [ADB] Could not find online devices
+2022-01-25 03:46:43:797 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:43:797 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:44:038 [ADB] Getting connected devices
+2022-01-25 03:46:44:103 [ADB] No connected devices have been detected
+2022-01-25 03:46:44:104 [ADB] Could not find online devices
+2022-01-25 03:46:44:104 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:44:104 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:44:338 [ADB] Getting connected devices
+2022-01-25 03:46:44:377 [ADB] No connected devices have been detected
+2022-01-25 03:46:44:377 [ADB] Could not find online devices
+2022-01-25 03:46:44:377 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:44:378 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:44:614 [ADB] Getting connected devices
+2022-01-25 03:46:44:670 [ADB] No connected devices have been detected
+2022-01-25 03:46:44:670 [ADB] Could not find online devices
+2022-01-25 03:46:44:671 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:44:671 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:44:896 [ADB] Getting connected devices
+2022-01-25 03:46:44:971 [ADB] No connected devices have been detected
+2022-01-25 03:46:44:971 [ADB] Could not find online devices
+2022-01-25 03:46:44:972 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:44:972 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:45:205 [ADB] Getting connected devices
+2022-01-25 03:46:45:240 [ADB] No connected devices have been detected
+2022-01-25 03:46:45:240 [ADB] Could not find online devices
+2022-01-25 03:46:45:240 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:45:241 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:45:469 [ADB] Getting connected devices
+2022-01-25 03:46:45:502 [ADB] No connected devices have been detected
+2022-01-25 03:46:45:503 [ADB] Could not find online devices
+2022-01-25 03:46:45:503 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:45:503 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:45:737 [ADB] Getting connected devices
+2022-01-25 03:46:45:779 [ADB] No connected devices have been detected
+2022-01-25 03:46:45:779 [ADB] Could not find online devices
+2022-01-25 03:46:45:779 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:45:779 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:46:018 [ADB] Getting connected devices
+2022-01-25 03:46:46:075 [ADB] No connected devices have been detected
+2022-01-25 03:46:46:075 [ADB] Could not find online devices
+2022-01-25 03:46:46:075 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:46:075 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:46:315 [ADB] Getting connected devices
+2022-01-25 03:46:46:350 [ADB] No connected devices have been detected
+2022-01-25 03:46:46:350 [ADB] Could not find online devices
+2022-01-25 03:46:46:350 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:46:351 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:46:595 [ADB] Getting connected devices
+2022-01-25 03:46:46:643 [ADB] No connected devices have been detected
+2022-01-25 03:46:46:643 [ADB] Could not find online devices
+2022-01-25 03:46:46:643 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:46:643 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:46:874 [ADB] Getting connected devices
+2022-01-25 03:46:46:907 [ADB] No connected devices have been detected
+2022-01-25 03:46:46:907 [ADB] Could not find online devices
+2022-01-25 03:46:46:907 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:46:908 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:47:142 [ADB] Getting connected devices
+2022-01-25 03:46:47:206 [ADB] No connected devices have been detected
+2022-01-25 03:46:47:206 [ADB] Could not find online devices
+2022-01-25 03:46:47:206 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:47:206 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:47:454 [ADB] Getting connected devices
+2022-01-25 03:46:47:507 [ADB] No connected devices have been detected
+2022-01-25 03:46:47:508 [ADB] Could not find online devices
+2022-01-25 03:46:47:508 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:47:508 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:47:737 [ADB] Getting connected devices
+2022-01-25 03:46:47:791 [ADB] No connected devices have been detected
+2022-01-25 03:46:47:791 [ADB] Could not find online devices
+2022-01-25 03:46:47:792 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:47:792 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:48:034 [ADB] Getting connected devices
+2022-01-25 03:46:48:089 [ADB] No connected devices have been detected
+2022-01-25 03:46:48:089 [ADB] Could not find online devices
+2022-01-25 03:46:48:089 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:48:090 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:48:326 [ADB] Getting connected devices
+2022-01-25 03:46:48:368 [ADB] No connected devices have been detected
+2022-01-25 03:46:48:368 [ADB] Could not find online devices
+2022-01-25 03:46:48:368 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:48:368 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:48:607 [ADB] Getting connected devices
+2022-01-25 03:46:48:660 [ADB] No connected devices have been detected
+2022-01-25 03:46:48:660 [ADB] Could not find online devices
+2022-01-25 03:46:48:660 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:48:660 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:48:888 [ADB] Getting connected devices
+2022-01-25 03:46:48:948 [ADB] No connected devices have been detected
+2022-01-25 03:46:48:949 [ADB] Could not find online devices
+2022-01-25 03:46:48:949 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:48:949 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:49:185 [ADB] Getting connected devices
+2022-01-25 03:46:49:217 [ADB] No connected devices have been detected
+2022-01-25 03:46:49:217 [ADB] Could not find online devices
+2022-01-25 03:46:49:218 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:49:218 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:49:463 [ADB] Getting connected devices
+2022-01-25 03:46:49:489 [ADB] No connected devices have been detected
+2022-01-25 03:46:49:489 [ADB] Could not find online devices
+2022-01-25 03:46:49:489 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:49:489 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:49:712 [ADB] Getting connected devices
+2022-01-25 03:46:49:736 [ADB] No connected devices have been detected
+2022-01-25 03:46:49:737 [ADB] Could not find online devices
+2022-01-25 03:46:49:737 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:49:737 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:49:975 [ADB] Getting connected devices
+2022-01-25 03:46:49:998 [ADB] No connected devices have been detected
+2022-01-25 03:46:49:998 [ADB] Could not find online devices
+2022-01-25 03:46:49:998 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:49:998 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:50:240 [ADB] Getting connected devices
+2022-01-25 03:46:50:265 [ADB] No connected devices have been detected
+2022-01-25 03:46:50:265 [ADB] Could not find online devices
+2022-01-25 03:46:50:265 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:50:266 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:50:490 [ADB] Getting connected devices
+2022-01-25 03:46:50:516 [ADB] No connected devices have been detected
+2022-01-25 03:46:50:516 [ADB] Could not find online devices
+2022-01-25 03:46:50:517 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:50:517 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:50:755 [ADB] Getting connected devices
+2022-01-25 03:46:50:780 [ADB] No connected devices have been detected
+2022-01-25 03:46:50:780 [ADB] Could not find online devices
+2022-01-25 03:46:50:780 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:50:780 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:51:006 [ADB] Getting connected devices
+2022-01-25 03:46:51:029 [ADB] No connected devices have been detected
+2022-01-25 03:46:51:029 [ADB] Could not find online devices
+2022-01-25 03:46:51:030 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:51:030 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:51:269 [ADB] Getting connected devices
+2022-01-25 03:46:51:297 [ADB] No connected devices have been detected
+2022-01-25 03:46:51:298 [ADB] Could not find online devices
+2022-01-25 03:46:51:298 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:51:298 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:51:521 [ADB] Getting connected devices
+2022-01-25 03:46:51:545 [ADB] No connected devices have been detected
+2022-01-25 03:46:51:546 [ADB] Could not find online devices
+2022-01-25 03:46:51:546 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:51:546 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:51:771 [ADB] Getting connected devices
+2022-01-25 03:46:51:799 [ADB] No connected devices have been detected
+2022-01-25 03:46:51:799 [ADB] Could not find online devices
+2022-01-25 03:46:51:799 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:51:799 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:52:038 [ADB] Getting connected devices
+2022-01-25 03:46:52:079 [ADB] No connected devices have been detected
+2022-01-25 03:46:52:081 [ADB] Could not find online devices
+2022-01-25 03:46:52:081 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:52:081 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:52:317 [ADB] Getting connected devices
+2022-01-25 03:46:52:358 [ADB] No connected devices have been detected
+2022-01-25 03:46:52:358 [ADB] Could not find online devices
+2022-01-25 03:46:52:359 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:52:359 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:52:602 [ADB] Getting connected devices
+2022-01-25 03:46:52:650 [ADB] No connected devices have been detected
+2022-01-25 03:46:52:650 [ADB] Could not find online devices
+2022-01-25 03:46:52:650 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:52:650 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:52:882 [ADB] Getting connected devices
+2022-01-25 03:46:52:930 [ADB] No connected devices have been detected
+2022-01-25 03:46:52:930 [ADB] Could not find online devices
+2022-01-25 03:46:52:930 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:52:931 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:53:163 [ADB] Getting connected devices
+2022-01-25 03:46:53:196 [ADB] No connected devices have been detected
+2022-01-25 03:46:53:196 [ADB] Could not find online devices
+2022-01-25 03:46:53:196 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:53:196 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:53:426 [ADB] Getting connected devices
+2022-01-25 03:46:53:465 [ADB] No connected devices have been detected
+2022-01-25 03:46:53:465 [ADB] Could not find online devices
+2022-01-25 03:46:53:466 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:53:467 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:53:693 [ADB] Getting connected devices
+2022-01-25 03:46:53:731 [ADB] No connected devices have been detected
+2022-01-25 03:46:53:731 [ADB] Could not find online devices
+2022-01-25 03:46:53:731 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:53:731 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:53:959 [ADB] Getting connected devices
+2022-01-25 03:46:54:003 [ADB] No connected devices have been detected
+2022-01-25 03:46:54:004 [ADB] Could not find online devices
+2022-01-25 03:46:54:004 [ADB] Reconnecting adb (target offline)
+2022-01-25 03:46:54:004 [ADB] Running 'C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2022-01-25 03:46:54:245 [UiAutomator2] Deleting UiAutomator2 session
+2022-01-25 03:46:54:253 [BaseDriver] Event 'newSessionStarted' logged at 1643082414252 (09:16:54 GMT+0530 (India Standard Time))
+2022-01-25 03:46:54:331 [W3C] Encountered internal error running command: Error: Could not find a connected Android device in 20002ms.
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:266:13)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:18)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:331 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:332 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:332 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:332 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:332 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:333 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:333 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:333 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:333 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:333 [W3C]     at getDevices (C:\Users\JiDi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2022-01-25 03:46:54:368 [HTTP] <-- POST /wd/hub/session 500 24840 ms - 665
+2022-01-25 03:46:54:369 [HTTP] 
