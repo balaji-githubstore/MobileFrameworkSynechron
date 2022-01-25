@@ -2,50 +2,53 @@ package com.synechron.test;
 
 import java.net.MalformedURLException;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.synechron.base.AppiumWrapper;
+import com.synechron.pages.DismissPage;
+import com.synechron.pages.HomePage;
+import com.synechron.pages.SignInPage;
+import com.synechron.pages.WelcomePage;
 import com.synechron.utilities.DataProviderUtils;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class SignInTest extends AppiumWrapper {
-	
-	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "commonDataProvider")
-	public void invalidCredentialTest(String username,String password,String expectedError) throws MalformedURLException {
 
-		if(driver.findElementsByXPath("//*[@text='Dismiss']").size()>0)
-		{
-			test.log(Status.INFO, "Dismiss is present");
-			driver.findElementByXPath("//*[@text='Dismiss']").click();
-		}
-		
-		
-		driver.findElementByXPath("//*[@text='Sign in']").click();
-		driver.findElementByXPath("//*[@text='Sign in']").click();
-		driver.findElementByXPath("//*[contains(@text,'address')]").sendKeys(username);
-		
-		test.log(Status.INFO, "Entered Username as "+username);
-		
-		driver.findElementByXPath("//*[@content-desc='Password']").sendKeys(password);
-		
-		test.log(Status.INFO, "Entered Password as "+password);
+	@Test(dataProviderClass = DataProviderUtils.class, dataProvider = "commonDataProvider")
+	public void invalidCredentialTest(String username, String password, String expectedError)
+			throws MalformedURLException {
 
-		if (driver.isKeyboardShown()) {
-			driver.hideKeyboard();
-		}
+		DismissPage dismiss = new DismissPage(driver);
+		dismiss.clickOnDismiss();
 
-		driver.findElementByXPath("(//*[@text='Sign in'])[2]").click();
-		String actualError = driver.findElementByXPath("//*[contains(@text,'issue')]").getText();
-		
-		test.log(Status.INFO, "Error Message Displayed is"+actualError);
+		test.log(Status.INFO, "Handled dismiss");
+
+		HomePage home = new HomePage(driver);
+		home.clickOnSignIn();
+
+		WelcomePage welcome = new WelcomePage(driver);
+		welcome.clickOnSignIn();
+
+		SignInPage signIn = new SignInPage(driver);
+		signIn.enterUsername(username);
+		test.log(Status.INFO, "Entered Username as " + username);
+		signIn.enterPassword(password);
+		test.log(Status.INFO, "Entered Password as " + password);
+		signIn.clickOnSignIn();
+
+		String actualError = signIn.getInvalidErrorMessage();
+
+		test.log(Status.INFO, "Error Message Displayed is" + actualError);
 
 		Assert.assertEquals(actualError, expectedError);
-		
+
 		test.log(Status.INFO, "Assertion Successful");
 	}
-	
-	
+
+	// will start 3:55 PM IST
 
 }

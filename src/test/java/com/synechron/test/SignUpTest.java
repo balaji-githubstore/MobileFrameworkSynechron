@@ -3,14 +3,20 @@ package com.synechron.test;
 import org.testng.annotations.Test;
 
 import com.synechron.base.AppiumWrapper;
+import com.synechron.pages.DismissPage;
+import com.synechron.pages.HomePage;
 import com.synechron.utilities.DataProviderUtils;
 
 public class SignUpTest extends AppiumWrapper {
 
 	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "commonDataProvider")
 	public void validRegistrationTest(String firstname,String lastname,String date,String email,String password) {
-		driver.findElementByXPath("//*[@text='Dismiss']").click();
-		driver.findElementByAccessibilityId("Settings").click();
+		DismissPage dismiss = new DismissPage(driver);
+		dismiss.clickOnDismiss();
+		
+		HomePage home = new HomePage(driver);
+		home.clickOnSettings();
+		
 		driver.findElementByXPath("//*[@text='Sign in']").click();
 		driver.findElementByXPath("//*[@text='Sign up with email']").click();
 		driver.findElementByXPath("//*[@text='First name']").sendKeys(firstname);
