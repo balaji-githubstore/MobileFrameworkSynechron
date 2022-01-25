@@ -19,6 +19,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -86,7 +87,8 @@ public class AppiumWrapper {
 	}
 
 	@BeforeMethod
-	public void startApp(Method method) throws IOException {
+	@Parameters({"udid"})
+	public void startApp(String udid,Method method) throws IOException {
 
 		String appFile = PropUtils.getValue("src/test/resources/testdata/data.properties", "app");
 
@@ -101,6 +103,7 @@ public class AppiumWrapper {
 				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi");
 				cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+				cap.setCapability(MobileCapabilityType.UDID, udid);
 				cap.setCapability(MobileCapabilityType.APP, absolutePath);
 
 				driver = new AndroidDriver<WebElement>(service, cap);

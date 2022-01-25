@@ -1,0 +1,12 @@
+2022-01-25 11:16:05:807 [Appium] Welcome to Appium v1.22.2
+2022-01-25 11:16:05:808 [Appium] Non-default server args:
+2022-01-25 11:16:05:808 [Appium]   port: 1632
+2022-01-25 11:16:05:808 [Appium]   logFile: D:\B-Mine\Company\Company\Synechron\appium_workspace\MobileAutomationFramework\src\test\resources\log\appium_log_2022-01-25T16-46-03.081023400.log
+2022-01-25 11:16:05:809 [Appium]   relaxedSecurityEnabled: true
+2022-01-25 11:16:05:840 [Appium] Appium REST http interface listener started on 0.0.0.0:1632
+2022-01-25 11:16:05:970 [HTTP] --> GET /wd/hub/status
+2022-01-25 11:16:05:970 [HTTP] {}
+2022-01-25 11:16:05:973 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-01-25 11:16:05:975 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.2"}}
+2022-01-25 11:16:05:980 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2022-01-25 11:16:05:980 [HTTP] 
