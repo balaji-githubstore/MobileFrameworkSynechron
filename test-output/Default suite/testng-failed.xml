@@ -5,8 +5,8 @@
     <classes>
       <class name="com.synechron.test.SignInTest">
         <methods>
-          <include name="terminateApp"/>
           <include name="startApp"/>
+          <include name="terminateApp"/>
           <include name="invalidCredentialTest"/>
           <include name="appiumServerTerminate"/>
           <include name="appiumServerSetup"/>

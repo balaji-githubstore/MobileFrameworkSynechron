@@ -34,6 +34,7 @@ public class AppiumWrapper {
 	public void appiumServerSetup() {
 		
 		AppiumServiceBuilder builder=new AppiumServiceBuilder()
+//				.withIPAddress("127.0.0.1")
 				.usingAnyFreePort()
 				.withArgument(GeneralServerFlag.RELAXED_SECURITY)
 				.withLogFile(new File("src/test/resources/log/appium_log_"+LocalDateTime.now().toString().replace(":", "-")+".log"));
